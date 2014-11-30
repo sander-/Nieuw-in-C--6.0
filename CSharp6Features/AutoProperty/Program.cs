@@ -51,8 +51,7 @@ namespace AutoProperty
             this.Naam = "Frans";
         }
     }
-
-
+    
     class Program
     {
         static void Main(string[] args)

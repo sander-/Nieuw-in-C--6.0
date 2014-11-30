@@ -12,7 +12,7 @@ namespace NullPropagation
         {
             // 1. Dit gaat fout
             var recept1 = new Recept();
-            //var benodigd1 = recept1.Ingredienten.FirstOrDefault().Naam;
+            var benodigd1 = recept1.Ingredienten.FirstOrDefault().Naam;
 
             // 2. Dit gaat goed
             var recept2 = new Recept();

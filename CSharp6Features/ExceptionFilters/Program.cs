@@ -50,11 +50,11 @@ namespace ExceptionFilters
         {
             return e.Message.Contains("niveau");
         }
-        //static bool Log(Exception e)
-        //{
-        //    Console.WriteLine("Fout gevonden: " + e.Message);
-        //    return false;
-        //}
+        static bool Log(Exception e)
+        {
+            Console.WriteLine("Fout gevonden: " + e.Message);
+            return false;
+        }
     }
 
     class Recept

@@ -34,8 +34,8 @@ namespace AwaitInCatchFinally
                 // Dit kon niet in =< C# 5.0
                 await Logger.LogWrite("Klaar.");
             }
-
         }
+
         static class Logger
         {
             public async static Task LogWrite(string message)
