@@ -14,7 +14,7 @@ namespace DictionaryInitializer
             {
                 { 1, "Breek een ei in het kommetje." },
                 { 2, "Laat in de koekenpan de margarine lichtbruin worden." },
-                { 2, "Giet het ei in de pan." },                
+                { 3, "Giet het ei in de pan." },                
                 { 4, "Bak op een niet te grote vlam zodat het ei gestold is." }
             };
 
