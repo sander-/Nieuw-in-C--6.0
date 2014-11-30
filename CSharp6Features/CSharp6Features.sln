@@ -3,17 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.22310.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoProperty", "AutoProperty\AutoProperty.csproj", "{AFB7B16C-BC6A-4499-9329-2EEB42FBCDA7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. AutoProperty", "AutoProperty\01. AutoProperty.csproj", "{AFB7B16C-BC6A-4499-9329-2EEB42FBCDA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structs", "Structs\Structs.csproj", "{F082AC84-C36E-481E-85D8-F6963538622B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Structs", "Structs\02. Structs.csproj", "{F082AC84-C36E-481E-85D8-F6963538622B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticMembers", "StaticMembers\StaticMembers.csproj", "{5490A668-7E34-436E-9E4C-1F918855E712}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. StaticMembers", "StaticMembers\03. StaticMembers.csproj", "{5490A668-7E34-436E-9E4C-1F918855E712}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DictionaryInitializer", "DictionaryInitializer\DictionaryInitializer.csproj", "{376FAB27-F9BE-499E-99A2-B696FA90FC7C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. DictionaryInitializer", "DictionaryInitializer\04. DictionaryInitializer.csproj", "{376FAB27-F9BE-499E-99A2-B696FA90FC7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwaitInCatchFinally", "AwaitInCatchFinally\AwaitInCatchFinally.csproj", "{558A20E6-E44B-45A2-AE34-AE8D380B49FD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. AwaitInCatchFinally", "AwaitInCatchFinally\05. AwaitInCatchFinally.csproj", "{558A20E6-E44B-45A2-AE34-AE8D380B49FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionFilters", "ExceptionFilters\ExceptionFilters.csproj", "{59E3F1DE-E81B-4663-BC99-4E7A3F4E9668}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. ExceptionFilters", "ExceptionFilters\06. ExceptionFilters.csproj", "{59E3F1DE-E81B-4663-BC99-4E7A3F4E9668}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. ExpressionBodiedMembers", "ExpressionBodiedMembers\07. ExpressionBodiedMembers.csproj", "{09B4B49F-AB5D-44C4-A13E-E078550E14DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. NullPropagation", "NullPropagation\08. NullPropagation.csproj", "{C8024590-F124-4129-A5C1-D6CE70C77C98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. StringInterpolation", "StringInterpolation\09. StringInterpolation.csproj", "{7CE18CC8-4AD0-40F2-88D1-06EFFB33C21A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. NameOfExpressions", "NameOfExpressions\10. NameOfExpressions.csproj", "{7D1AB388-775B-4076-9C26-502087291DBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. Pragma", "Pragma\11. Pragma.csproj", "{7154BA14-A727-49B7-9EE0-9119E7C2F088}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12. ExtensionAddInCollectionInitializers", "ExtensionAddInCollectionInitializers\12. ExtensionAddInCollectionInitializers.csproj", "{92D3325F-342C-4813-B14F-D15FE654C865}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +57,30 @@ Global
 		{59E3F1DE-E81B-4663-BC99-4E7A3F4E9668}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59E3F1DE-E81B-4663-BC99-4E7A3F4E9668}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59E3F1DE-E81B-4663-BC99-4E7A3F4E9668}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09B4B49F-AB5D-44C4-A13E-E078550E14DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09B4B49F-AB5D-44C4-A13E-E078550E14DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09B4B49F-AB5D-44C4-A13E-E078550E14DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09B4B49F-AB5D-44C4-A13E-E078550E14DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8024590-F124-4129-A5C1-D6CE70C77C98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8024590-F124-4129-A5C1-D6CE70C77C98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8024590-F124-4129-A5C1-D6CE70C77C98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8024590-F124-4129-A5C1-D6CE70C77C98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CE18CC8-4AD0-40F2-88D1-06EFFB33C21A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CE18CC8-4AD0-40F2-88D1-06EFFB33C21A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CE18CC8-4AD0-40F2-88D1-06EFFB33C21A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CE18CC8-4AD0-40F2-88D1-06EFFB33C21A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D1AB388-775B-4076-9C26-502087291DBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D1AB388-775B-4076-9C26-502087291DBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D1AB388-775B-4076-9C26-502087291DBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D1AB388-775B-4076-9C26-502087291DBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7154BA14-A727-49B7-9EE0-9119E7C2F088}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7154BA14-A727-49B7-9EE0-9119E7C2F088}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7154BA14-A727-49B7-9EE0-9119E7C2F088}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7154BA14-A727-49B7-9EE0-9119E7C2F088}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92D3325F-342C-4813-B14F-D15FE654C865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92D3325F-342C-4813-B14F-D15FE654C865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92D3325F-342C-4813-B14F-D15FE654C865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92D3325F-342C-4813-B14F-D15FE654C865}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
