@@ -46,3 +46,4 @@ Temporary Items
 CSharp6Features.sln.ide
 bin
 obj
+*.suo
