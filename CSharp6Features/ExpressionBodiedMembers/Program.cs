@@ -17,6 +17,35 @@ namespace ExpressionBodiedMembers
         }
     }
 
+    public class ReceptOud
+    {
+        public int Id { get; set; }
+        public string Naam { get; set; }
+        public IEnumerable<string> Stappen { get; set; }
+        private IQueryable<ReceptOud> repository;
+
+        public int Niveau
+        {
+            get
+            {
+                return Stappen.Count() * 100;
+            }
+        }
+
+        public static ReceptOud NieuwRecept(string naam)
+        {
+            return new ReceptOud() { Naam = naam };
+        }
+
+        public static ReceptOud operator +(ReceptOud r1, ReceptOud r2)
+        {
+            return new ReceptOud()
+            {
+                Stappen = r1.Stappen.Union(r2.Stappen)
+            };
+        }
+    }
+
     public class Recept
     {
         public int Id { get; set; }
@@ -25,17 +54,20 @@ namespace ExpressionBodiedMembers
 
         private IQueryable<Recept> repository;
 
-        // 1. Expression bodies voor methoden
+        // 1. Expression bodies voor eigenschappen
+        public int Niveau => Stappen.Count() * 100;
+
+        // 2. Expression bodies voor methoden
         public static Recept NieuwRecept(string naam) => new Recept() { Naam = naam };
 
-        // 2. Expression bodies voor operators
+        // 3. Expression bodies voor operators
         public static Recept operator +(Recept r1, Recept r2) => new Recept() { Stappen = r1.Stappen.Union(r2.Stappen) };
 
-        // 3. Expression bodies voor void
+        // 4. Expression bodies voor void
         public void PrintStappen() => Stappen.ToList().ForEach(p => Console.WriteLine(p));
 
-        // 4. Expression bodies voor indexers
-        public Recept this[int id] => repository.FirstOrDefault(p=>p.Id == id);
+        // 5. Expression bodies voor indexers
+        public Recept this[int id] => repository.FirstOrDefault(p => p.Id == id);
 
         public Recept()
         {

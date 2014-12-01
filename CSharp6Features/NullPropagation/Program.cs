@@ -14,10 +14,21 @@ namespace NullPropagation
             var recept1 = new Recept();
             var benodigd1 = recept1.Ingredienten.FirstOrDefault().Naam;
 
-            // 2. Dit gaat goed
+            // 2. In =< C# 5.0 moest het zo
             var recept2 = new Recept();
-            var benodigd2 = recept2.Ingredienten?.FirstOrDefault()?.Naam;
-            var hoeveelheid2= recept2.Ingredienten?.FirstOrDefault()?.Hoeveelheid;
+            string benodigd2 = null;
+            if(recept2.Ingredienten != null)
+            {
+                if(recept2.Ingredienten.Count() > 0)
+                {
+                    benodigd2 = recept2.Ingredienten.First().Naam;
+                }
+            }
+
+            // 3. In C# 6.0
+            var recept3 = new Recept();
+            var benodigd3 = recept3.Ingredienten?.FirstOrDefault()?.Naam;
+            var hoeveelheid3= recept3.Ingredienten?.FirstOrDefault()?.Hoeveelheid;
         }
     }
 
