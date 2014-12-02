@@ -9,7 +9,7 @@ namespace NullPropagation
     class Program
     {
         static void Main(string[] args)
-        {
+        {            
             // 1. Dit gaat fout
             var recept1 = new Recept();
             var benodigd1 = recept1.Ingredienten.FirstOrDefault().Naam;

@@ -18,16 +18,16 @@ namespace AwaitInCatchFinally
         static async void DownloadCode()
         {
             WebClient client = new WebClient();
+            Repository repository = new Repository();            
             try
             {
                 var address = new Uri("https://github.com/sander-/Nieuw-in-C--6.0/archive/master.zip");
-                await client.DownloadFileTaskAsync(address, "c:\\temp\\code.zip");
-
+                await client.DownloadFileTaskAsync(address, "c:\\temp\\code.zip");                                 
             }
             catch (WebException e)
             {
                 // Dit kon niet in =< C# 5.0
-                await Logger.LogWrite(e.Message);
+                await Logger.LogWrite(e.Message);                
             }
             finally
             {
@@ -43,6 +43,28 @@ namespace AwaitInCatchFinally
                 await Task.Run(() =>
                System.IO.File.AppendAllText("c:\\temp\\log.txt", message + Environment.NewLine));
             }
+        }
+
+        public class Repository
+        {
+            public async Task<object> GetResource()
+            {
+                await Task.Run(()=> "") ;
+                return new object();
+            }
+
+            public async Task<object> Log(string message)
+            {
+                await Task.Run(() => "");
+                return new object();
+            }
+
+            public async Task<object> Close()
+            {
+                await Task.Run(() => "");
+                return new object();
+            }
+            
         }
     }
 }

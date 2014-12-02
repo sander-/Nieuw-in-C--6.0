@@ -15,6 +15,7 @@ namespace NameOfExpressions
             {
                 Console.WriteLine(nameof(recept));
                 Console.WriteLine(recept.Naam);
+                
                 if (recept.Ingredienten == null)
                     throw new ArgumentNullException(nameof(Recept.Ingredienten));                
             }
